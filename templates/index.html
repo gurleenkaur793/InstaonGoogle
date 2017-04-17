@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Instagram</title>
+			<meta charset="utf-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="static/stylesheets/style.css">
+	</head>
+	
+	<body>
+		<div class="container">
+			
+			<div class="header">
+				<h3 class="text-muted"><center>Welcome {{username}}</center></h3>
+			</div>
+			
+			<div>
+				<form action="logout" method="post">
+					<center>
+						<input type="submit" value="logout">
+					</center>
+				</form>
+			</div>
+			
+			<hr>
+			
+			<div>			
+				<form action="upload" method="post" enctype="multipart/form-data">
+					<center>
+						<input type="file" name="file">
+						<br><br>
+						<input type="submit" value="Upload">
+					</center>
+				</form>
+			</div>
+			
+			<hr>
+			
+			<div class="header">
+				<h3 class="text-muted"><center><a href='list'>View your uploaded images</a></center></h3>
+			</div>
+			
+			<hr>
+			
+			<div class="header">
+				<h3 class="text-muted"><center><a href='list_all'>View all uploaded images</a></center></h3>
+			</div>
+			
+		</div>
+	</body>
+</html>
